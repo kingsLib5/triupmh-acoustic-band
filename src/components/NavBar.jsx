@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { FaPlay, FaPause, FaBars, FaTimes } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import pathMp3 from '../assets/path.mp3';
 
 function Navbar() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -36,7 +37,7 @@ function Navbar() {
               >
                 {isPlaying ? <FaPause size={20} /> : <FaPlay size={20} />}
               </button>
-              <audio ref={audioRef} src="/src/assets/path.mp3" />
+              <audio ref={audioRef} src={pathMp3} />
             </div>
           </div>
           <div className='col-span-9 flex'>

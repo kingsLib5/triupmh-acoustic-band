@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Triumph1Mp4 from '../assets/Triumph1.mp4';
 
 function Video() {
   return (
@@ -11,7 +12,6 @@ function Video() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {/* Header Section */}
           <motion.div
             initial={{ y: -20 }}
             whileInView={{ y: 0 }}
@@ -24,7 +24,6 @@ function Video() {
             <div className='mt-4 h-1 bg-gradient-to-r from-amber-500/30 via-amber-500 to-amber-500/30 w-1/3 mx-auto' />
           </motion.div>
 
-          {/* Video Section */}
           <motion.div
             initial={{ scale: 0.95, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
@@ -46,13 +45,12 @@ function Video() {
                 preload="metadata"
                 poster="/path/to/your-poster-image.jpg"
               >
-                <source src="/src/assets/Triumph1.mp4" type="video/mp4" />
-                <source src="/src/assets/Triumph1.webm" type="video/webm" />
+                <source src={Triumph1Mp4} type="video/mp4" />
+                {/* <source src={Triumph1Webm} type="video/webm" /> */}
                 Your browser does not support the video tag.
               </video>
             </div>
 
-            {/* Play Button Overlay */}
             <div className='absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
               <button className='p-4 rounded-full bg-amber-500/90 hover:bg-amber-600 transition-colors shadow-lg'>
                 <svg 
@@ -72,7 +70,6 @@ function Video() {
             </div>
           </motion.div>
 
-          {/* Decorative Bottom Text */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

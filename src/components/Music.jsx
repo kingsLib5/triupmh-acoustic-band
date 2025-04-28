@@ -3,6 +3,8 @@ import { IoShareSocial } from "react-icons/io5";
 import { IoPlayCircleOutline, IoPauseCircleOutline } from "react-icons/io5";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import pathMp3 from '../assets/path.mp3';
+import path2Mp3 from '../assets/path2.mp3';
 
 const songVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -62,10 +64,8 @@ const SongCard = ({ title, audioSrc, index }) => {
       animate={controls}
       className="group relative bg-[black] border-gray-800 rounded-2xl mx-[5%] md:mx-[25%] my-4 p-6 flex flex-col shadow-2xl hover:shadow-3xl transition-all duration-300"
     >
-      {/* Glow Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-      {/* Song Info */}
       <div className="border-b border-gray-800 pb-4 mb-4 flex justify-between items-center">
         <div className="flex flex-col">
           <h4 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
@@ -80,7 +80,6 @@ const SongCard = ({ title, audioSrc, index }) => {
         </button>
       </div>
 
-      {/* Play Controls */}
       <div className="flex flex-1 flex-col justify-between">
         <div className="flex items-center justify-between">
           <motion.button 
@@ -100,7 +99,6 @@ const SongCard = ({ title, audioSrc, index }) => {
           </span>
         </div>
 
-        {/* Progress Bar */}
         <div className="w-full bg-gray-800 h-1.5 rounded-full mb-2 mt-4">
           <motion.div
             className="bg-amber-400 h-full rounded-full relative"
@@ -111,7 +109,6 @@ const SongCard = ({ title, audioSrc, index }) => {
           </motion.div>
         </div>
 
-        {/* Time Display */}
         <div className="flex justify-between text-gray-400 text-sm font-mono mt-2">
           <span>{formatTime(currentTime)}</span>
           <span>{formatTime(duration)}</span>
@@ -146,12 +143,12 @@ function Music() {
       <div className="space-y-12">
         <SongCard 
           title="PATH" 
-          audioSrc="/src/assets/path.mp3" 
+          audioSrc={pathMp3} 
           index={0}
         />
         <SongCard 
           title="RUNNER" 
-          audioSrc="/src/assets/path2.mp3" 
+          audioSrc={path2Mp3} 
           index={1}
         />
       </div>
