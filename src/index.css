@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes glow {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+.shadow-glow {
+  filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.5));
+}
+
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.3));
+}
+
+.bg-glow {
+  animation: glow 2s ease-in-out infinite;
+}
