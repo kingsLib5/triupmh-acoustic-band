@@ -4,25 +4,49 @@ import backgroundImage from '../assets/clo2.jpg'; // Import the image
 const UpcomingShows = () => {
   const shows = [
     {
-      date: 'March 15th',
+      date: 'May 20th',
+      venue: 'Wasatch Distillery',
+      location: 'Salt Lake City, UT',
+      time: '6:00 PM'
+    },
+    {
+      date: 'May 21th',
+      venue: 'Wasatch Distillery',
+      location: 'Salt Lake City, UT',
+      time: '6:00 PM'
+    },
+    {
+      date: 'June 15th',
       venue: 'High West Distillery',
       location: 'Coalville, UT',
       time: '6:00 PM'
     },
     {
-      date: 'March 28th',
+      date: 'June 16th',
       venue: 'High West Distillery',
       location: 'Coalville, UT',
       time: '6:00 PM'
     },
     {
-      date: 'May 5th',
+      date: 'July 5th',
       venue: 'Gracie\'s Bar',
       location: 'Salt Lake City, UT',
       time: '7:00 PM'
     },
     {
-      date: 'June 28th',
+      date: 'July 26th',
+      venue: 'Gracie\'s Bar',
+      location: 'Salt Lake City, UT',
+      time: '7:00 PM'
+    },
+    {
+      date: 'July 27th',
+      venue: 'Gracie\'s Bar',
+      location: 'Salt Lake City, UT',
+      time: '7:00 PM'
+    },
+    {
+      date: 'July 28th',
       venue: 'Gracie\'s Bar',
       location: 'Salt Lake City, UT',
       time: 'Noon'
