@@ -18,7 +18,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative bg-[#0a0a0a] min-h-screen flex items-center justify-center overflow-hidden">
+    <div id="home" className="relative bg-[#0a0a0a] min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div 

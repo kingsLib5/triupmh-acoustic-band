@@ -43,7 +43,7 @@ function Navbar() {
           <div className='col-span-9 flex'>
             <div className='w-[80%] flex justify-center items-center'>
               <ul className='flex text-white text-sm justify-center font-bold items-center gap-8'>
-                <li><a href="#hero" className='hover:text-amber-400 transition-colors'>HOME</a></li>
+                <li><a href="#home" className='hover:text-amber-400 transition-colors'>HOME</a></li>
                 <li><a href="#music" className='hover:text-amber-400 transition-colors'>MUSIC</a></li>
                 <li><a href="#video" className='hover:text-amber-400 transition-colors'>VIDEO</a></li>
                 <li><a href="#shows" className='hover:text-amber-400 transition-colors'>UPCOMING SHOWS</a></li>
@@ -81,7 +81,7 @@ function Navbar() {
             className='absolute top-full left-0 w-full bg-[#181818] shadow-lg'
           >
             <ul className='flex flex-col items-center py-4 gap-4'>
-              <li><a href="#hero" className='text-white text-sm font-bold hover:text-amber-400 transition-colors' onClick={() => setIsMenuOpen(false)}>HOME</a></li>
+              <li><a href="#home" className='text-white text-sm font-bold hover:text-amber-400 transition-colors' onClick={() => setIsMenuOpen(false)}>HOME</a></li>
               <li><a href="#music" className='text-white text-sm font-bold hover:text-amber-400 transition-colors' onClick={() => setIsMenuOpen(false)}>MUSIC</a></li>
               <li><a href="#video" className='text-white text-sm font-bold hover:text-amber-400 transition-colors' onClick={() => setIsMenuOpen(false)}>VIDEO</a></li>
               <li><a href="#shows" className='text-white text-sm font-bold hover:text-amber-400 transition-colors' onClick={() => setIsMenuOpen(false)}>UPCOMING SHOWS</a></li>
