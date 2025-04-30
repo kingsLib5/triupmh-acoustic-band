@@ -2,7 +2,13 @@
     "redirects": [
       {
         "source": "/(.*)",
-        "destination": "https://www.triumphacousticband.org/$1",
+        "has": [
+          {
+            "type": "host",
+            "value": "triumphacousticband.org"
+          }
+        ],
+        "destination": "https://www.triumphacousticband.org/:1",
         "permanent": true
       }
     ]
